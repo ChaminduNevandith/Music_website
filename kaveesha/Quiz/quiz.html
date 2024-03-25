@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Quiz</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <a href=>Query Form</a>
+        <a href="/kaveesha/Studentdetails/studentdetails.html">Student details</a>
+        <a href="/gallary 1.html">Gallery</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="/archana/buy product/buy prod.html">Buy products</a>
+        <a href="/archana/presentation/presentation.html"></a>
+
+        <a class="navbar-brand" href="../mainpage/main.html">
+            <img src="logo.jpeg" width="60" height="40" alt="logo">
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+
+    <!--Multiple-choice quiz-->
+
+    <div id="home_area" class='start_ques_box'>
+
+
+        <h1>Music Quiz</h1>
+        <!--guidelines of the quize -->
+        <br>
+        <p>1.Quiz consists of 10 questions.</p>
+        <p>2.You have <span>60 seconds</span> to answer.</p>
+        <p>3.You will get 2 marks for each correct answer, -1 for wrong answer.</p>
+        <p>4.The time will start after you press the start button.</p>
+
+        <button type='button' class='btn' onclick="showQuestions()">Start</button>
+    </div>
+
+    <!--10 questions included-->
+    <div id="ques_area" hidden>
+        <!--question 1-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 1 </p>
+            <p class='ques'>Who won the Grammy Award for Record of the Year in 2021?</p>
+            <input type="radio" class='answer' name="answer1" value="1"> Beyoncé<br>
+            <input type="radio" class='answer' name="answer1" value="2"> Dua Lipa<br>
+            <input type="radio" class='answer' name="answer1" value="3"> Taylor Swift<br>
+            <input type="radio" class='answer' name="answer1" value="4"> Billie Eilish<br>
+
+        </div>
+        <!--question 2-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 2 </p>
+            <p class='ques'>Which of the following is not a member of the Beatles?</p>
+            <input type="radio" class='answer' name="answer2" value="1"> John Lennon<br>
+            <input type="radio" class='answer' name="answer2" value="2"> Paul McCartney<br>
+            <input type="radio" class='answer' name="answer2" value="3"> Mick Jagger<br>
+            <input type="radio" class='answer' name="answer2" value="4"> Ringo Starr<br>
+        </div>
+        <!--question 3-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 3 </p>
+            <p class='ques'>What is the name of Adele's debut album?</p>
+            <input type="radio" class='answer' name="answer3" value="1"> 19<br>
+            <input type="radio" class='answer' name="answer3" value="2"> 21<br>
+            <input type="radio" class='answer' name="answer3" value="3"> 20<br>
+            <input type="radio" class='answer' name="answer3" value="4"> 30<br>
+        </div>
+        <!--question 4-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 4 </p>
+            <p class='ques'>Who is the lead singer of the Rolling Stones?</p>
+            <input type="radio" class='answer' name="answer4" value="1"> Keith Richards<br>
+            <input type="radio" class='answer' name="answer4" value="2"> Mick Jagger<br>
+            <input type="radio" class='answer' name="answer4" value="3"> Charlie Watts<br>
+            <input type="radio" class='answer' name="answer4" value="4"> Ron Wood<br>
+        </div>
+        <!--question 5-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 5 </p>
+            <p class='ques'>What is the name of the national anthem of the United States?</p>
+            <input type="radio" class='answer' name="answer5" value="1"> The Star-Spangled Banner<br>
+            <input type="radio" class='answer' name="answer5" value="2"> O Canada<br>
+            <input type="radio" class='answer' name="answer5" value="3"> God Save the Queen<br>
+            <input type="radio" class='answer' name="answer5" value="4"> La Marseillaise<br>
+        </div>
+        <!--question 6-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 6 </p>
+            <p class='ques'>Which rapper released the album "To Pimp a Butterfly"?</p>
+            <input type="radio" class='answer' name="answer6" value="1"> Kendrick Lamar<br>
+            <input type="radio" class='answer' name="answer6" value="2"> Jay-Z<br>
+            <input type="radio" class='answer' name="answer6" value="3"> Drake<br>
+            <input type="radio" class='answer' name="answer6" value="4"> Kanye West<br>
+        </div>
+        <!--question 7-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 7 </p>
+            <p class='ques'>Who sang the hit song "Uptown Funk"?</p>
+            <input type="radio" class='answer' name="answer7" value="1"> Mark Ronson<br>
+            <input type="radio" class='answer' name="answer7" value="2"> Justin Timberlake<br>
+            <input type="radio" class='answer' name="answer7" value="3"> Ed sheeran<br>
+            <input type="radio" class='answer' name="answer7" value="4"> Shawn Mendis<br>
+        </div>
+        <!--question 8-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 8 </p>
+            <p class='ques'>What is the name of the band that recorded the song "Smells Like Teen Spirit"?</p>
+            <input type="radio" class='answer' name="answer8" value="1"> Nirvana<br>
+            <input type="radio" class='answer' name="answer8" value="2"> Pearl Jam<br>
+            <input type="radio" class='answer' name="answer8" value="3"> Soundgarden <br>
+            <input type="radio" class='answer' name="answer8" value="4"> Alice in Chains<br>
+        </div>
+        <!--question 9-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 9 </p>
+            <p class='ques'>Who is known for the song "I Will Always Love You"?</p>
+            <input type="radio" class='answer' name="answer9" value="1"> Whitney Houston<br>
+            <input type="radio" class='answer' name="answer9" value="2"> Celine Dion<br>
+            <input type="radio" class='answer' name="answer9" value="3"> Christina Aguilera<br>
+            <input type="radio" class='answer' name="answer9" value="4"> Mariah Carey<br>
+        </div>
+        <!--question 10-->
+        <div class='ques_box'>
+            <p class='ques_number'>Question 10 </p>
+            <p class='ques'>Which of the following is not a member of the Spice Girls?</p>
+            <input type="radio" class='answer' name="answer10" value="1"> Victoria Beckham<br>
+            <input type="radio" class='answer' name="answer10" value="2"> Geri Halliwell<br>
+            <input type="radio" class='answer' name="answer10" value="3"> Mel b<br>
+            <input type="radio" class='answer' name="answer10" value="4"> Emma Bunton<br>
+        </div>
+
+        <div class="ques_box">
+            <button type="button" class="btn" id="toTop" onclick="goToTop()">Page Up</button>
+            <button type="submit" class="btn" onclick="showResults()">Submit</button>
+        </div>
+    </div>
+    <!-- Results Area-->
+    <div id="results_area" class='results_box' hidden>
+        <h1 class='results'>Results</h1>
+        <p class='total' id='total'></p>
+        <table>
+            <tr>
+                <th>QUESTION NUMBER</th>
+                <th>YOUR ANSWER</th>
+            </tr>
+            <tr>
+                <td>Question 01</td>
+                <td id="q1"></td>
+            </tr>
+            <tr>
+                <td>Question 02</td>
+                <td id="q2"></td>
+            </tr>
+            <tr>
+                <td>Question 03</td>
+                <td id="q3"></td>
+            </tr>
+            <tr>
+                <td>Question 04</td>
+                <td id="q4"></td>
+            </tr>
+            <tr>
+                <td>Question 05</td>
+                <td id="q5"></td>
+            </tr>
+            <tr>
+                <td>Question 06</td>
+                <td id="q6"></td>
+            </tr>
+            <tr>
+                <td>Question 07</td>
+                <td id="q7"></td>
+            </tr>
+            <tr>
+                <td>Question 08</td>
+                <td id="q8"></td>
+            </tr>
+            <tr>
+                <td>Question 09</td>
+                <td id="q9"></td>
+            </tr>
+            <tr>
+                <td>Question 10</td>
+                <td id="q10"></td>
+            </tr>
+        </table>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        function getRadioValue(radioArray) {
+            var i;
+            for (i = 0; i < radioArray.length; i++) {
+                if (radioArray[i].checked) {
+                    return radioArray[i].value;
+                }
+            }
+            return -1;
+        }
+
+        function timer() {
+            var setTimer = setInterval(showResults, 60000);
+        }
+
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function reviewAnswers() {
+            var homeBox = document.getElementById("home_area").hidden = true;
+            var questionBox = document.getElementById("ques_area").hidden = false;
+            var resultsBox = document.getElementById("results_area").hidden = true;
+            document.body.style.backgroundColor = "#63656a";
+        }
+
+        function showQuestions() {
+            var homeBox = document.getElementById("home_area").hidden = true;
+            var questionBox = document.getElementById("ques_area").hidden = false;
+            var resultsBox = document.getElementById("results_area").hidden = true;
+
+            timer();
+        }
+
+        function showResults() {
+            var homeBox = document.getElementById("home_area").hidden = true;
+            var questionBox = document.getElementById("ques_area").hidden = true;
+            var resultsBox = document.getElementById("results_area").hidden = false;
+
+            var selectedAnswers = [];
+            for (let j = 0; j < 10; j++) {
+                var name = "answer" + (j + 1);
+                var allAnswers = [];
+                allAnswers = document.getElementsByName(name);
+
+                var selectedAnswer = getRadioValue(allAnswers);
+                selectedAnswers[j] = selectedAnswer;
+            }
+
+            let score = 0;
+            const correctAnswers = [3, 3, 1, 2, 1, 1, 1, 1, 1, 1];
+            for (let i = 0; i < selectedAnswers.length; i++) {
+                var id = "q" + (i + 1);
+                if (selectedAnswers[i] == correctAnswers[i]) {
+                    score += 2;
+                    document.getElementById(id).innerHTML = "correct";
+                } else {
+                    score -= 1;
+                    document.getElementById(id).innerHTML = "incorrect";
+                }
+            }
+
+            document.getElementById("total").innerHTML = "Your score is " + score;
+
+            // document.body.style.backgroundColor = "yellow";
+
+            if (score > 16) {
+                document.body.style.backgroundColor = "#00ff00";
+            } else if (score >= 4) {
+                document.body.style.backgroundColor = "yellow";
+            } else {
+                document.body.style.backgroundColor = "#ff0000";
+            }
+        }
+    </script>
+
+    <div class="navbarbo">
+        <a href="/kaveesha/editors page/Editors page.html">Editor</a>
+        <a href="qq">Query Form</a>
+        <a href="/sitemap.html">Site Map</a>
+        <a class="navbar-brand" href="../mainpage/main.html">
+            <img src="logo.jpeg" width="60" height="40" alt="logo">
+        </a>
+    </div>
+</body>
+
+</html> 
